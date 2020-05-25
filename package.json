@@ -1,0 +1,19 @@
+{
+  "name": "shubham-upreti.github.io",
+  "version": "1.0.0",
+  "description": "Responsive Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/progmatic-99/shubham-upreti.github.io.git"
+  },
+  "author": "Shubham Upreti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/progmatic-99/shubham-upreti.github.io/issues"
+  },
+  "homepage": "https://github.com/progmatic-99/shubham-upreti.github.io#readme"
+}
