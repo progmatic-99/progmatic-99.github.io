@@ -43,7 +43,6 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
   visibility: hidden;
 
   &.show {
@@ -65,7 +64,7 @@
   &-nav {
     margin: 0;
     padding: 0;
-    background: darken($color: $primary-color, $amount: 5);
+    background: rgba(darken($color: $primary-color, $amount: 5), $menu-opacity);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut;
@@ -78,7 +77,7 @@
 
   // Branding side
   &-branding {
-    background: $primary-color;
+    background: rgba($primary-color, $menu-opacity);
     @include easeOut;
     transform: translate3d(0, 100%, 0);
 
@@ -90,7 +89,6 @@
     .portrait {
       width: 200px;
       height: 200px;
-      opacity: 1;
       background: url("/dist/assets/img/ld.jpeg");
       border-radius: 50%;
       border: solid 3px $secondary-color;
