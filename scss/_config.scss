@@ -33,24 +33,28 @@ $menu-opacity: 0.9;
 // Media Query mixins
 
 @mixin mediaSm {
+  // width cannot be more than 500px
   @media screen and (max-width: 500px) {
     @content;
   }
 }
 
 @mixin mediaMd {
+  // width cannot be more than 768px
   @media screen and (max-width: 768px) {
     @content;
   }
 }
 
 @mixin mediaLg {
+  // width cannot be less than 769px
   @media screen and (min-width: 769px) and (max-width: 1170px) {
     @content;
   }
 }
 
 @mixin mediaXl {
+  // width cannot be less than 1171px
   @media screen and (min-width: 1171px) {
     @content;
   }

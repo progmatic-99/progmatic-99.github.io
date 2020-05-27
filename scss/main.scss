@@ -38,6 +38,8 @@ h3 {
 a {
   color: #fff;
   text-decoration: none;
+  // To remove the outer box which appears when link is clicked
+  outline: 0;
 }
 
 header {
