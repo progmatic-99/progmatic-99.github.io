@@ -55,6 +55,7 @@
       width: 200px;
       height: 200px;
       background: url("/dist/assets/img/ld.jpeg");
+      background-size: cover;
       border-radius: 50%;
       border: solid 3px #a2e464; }
   .menu .nav-item {
@@ -85,6 +86,21 @@
 
 .nav-item:nth-child(3) {
   transition-delay: 0.3s; }
+
+@media screen and (max-width: 768px) {
+  main {
+    text-align: center;
+    align-items: center;
+    padding: 2rem; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; } }
+
+@media screen and (max-width: 500px) {
+  main {
+    padding-left: 2rem; }
+    main#home h1 {
+      margin-top: 10vh; } }
 
 * {
   box-sizing: border-box; }
