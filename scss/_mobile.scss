@@ -11,22 +11,55 @@
   main {
     text-align: center;
     align-items: center;
-    padding: 2rem;
 
-    .lg-heading {
+    h1.lg-heading {
+      font-size: 3rem;
       line-height: 1;
       margin-bottom: 1rem;
+    }
+
+    h2.sm-heading {
+      font-size: 1rem;
+      width: 310px;
+    }
+  }
+
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .menu {
+    .nav-link {
+      font-size: 20px;
+    }
+  }
+
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0);
+
+    .portrait {
+      width: 100px;
+      height: 100px;
     }
   }
 }
 
 // Smartphones
 @include mediaSm {
-  main {
-    padding: 2rem;
-
-    &#home h1 {
-      margin-top: 10vh;
-    }
+  main#home h1 {
+    margin-top: 8vh;
   }
 }
