@@ -72,7 +72,7 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 400;
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     transition: all 1s ease-out; }
     .menu .nav-link:hover {
@@ -90,7 +90,8 @@
 @media screen and (max-width: 768px) {
   main {
     text-align: center;
-    align-items: center; }
+    align-items: center;
+    overflow: hidden; }
     main h1.lg-heading {
       font-size: 3rem;
       line-height: 1;
@@ -129,7 +130,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-color: #444;
-  color: #fff;
+  color: #ffffff;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   height: 100%;
   margin: 0;

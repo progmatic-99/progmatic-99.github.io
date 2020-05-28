@@ -9,7 +9,7 @@
 body {
   @include background();
   background-color: $primary-color;
-  color: #fff;
+  color: set-text-color($primary-color);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   height: 100%;
   margin: 0;
