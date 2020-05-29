@@ -120,6 +120,13 @@ main {
   }
 }
 
+// Projects
+.projects {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 #main-footer {
   text-align: center;
   padding: 1rem;
