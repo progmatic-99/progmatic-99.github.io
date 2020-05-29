@@ -87,41 +87,6 @@
 .nav-item:nth-child(3) {
   transition-delay: 0.3s; }
 
-@media screen and (max-width: 768px) {
-  main {
-    text-align: center;
-    align-items: center;
-    overflow: hidden; }
-    main h1.lg-heading {
-      font-size: 3rem;
-      line-height: 1;
-      margin-bottom: 1rem; }
-    main h2.sm-heading {
-      font-size: 1rem; }
-  ul.menu-nav,
-  div.menu-branding {
-    float: none;
-    width: 100%;
-    min-height: 0; }
-    ul.menu-nav.show,
-    div.menu-branding.show {
-      transform: translate3d(0, 0, 0); }
-  .menu .nav-link {
-    font-size: 20px; }
-  .menu-nav {
-    height: 75vh;
-    transform: translate3d(-100%, 0, 0); }
-  .menu-branding {
-    height: 25vh;
-    transform: translate3d(100%, 0, 0); }
-    .menu-branding .portrait {
-      width: 100px;
-      height: 100px; } }
-
-@media screen and (max-width: 500px) {
-  main#home h1 {
-    margin-top: 8vh; } }
-
 * {
   box-sizing: border-box; }
 
@@ -173,7 +138,7 @@ header {
 
 main {
   padding: 3rem;
-  height: 100%; }
+  min-height: calc(100vh - 50px); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -218,3 +183,40 @@ main {
   background: #2b2b2b;
   color: #ffffff;
   height: 50px; }
+
+@media screen and (max-width: 768px) {
+  main {
+    text-align: center;
+    align-items: center; }
+    main h1.lg-heading {
+      font-size: 3rem;
+      line-height: 1;
+      margin-bottom: 1rem; }
+    main h2.sm-heading {
+      font-size: 1rem; }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show,
+    div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu .nav-link {
+    font-size: 20px; }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0); }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .portrait {
+      width: 100px;
+      height: 100px; }
+  .about-info {
+    grid-template-areas: "bio-image" "bio" "job1" "job2" "job3";
+    grid-template-columns: 1fr; } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 8vh; } }

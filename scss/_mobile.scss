@@ -11,7 +11,6 @@
   main {
     text-align: center;
     align-items: center;
-    overflow: hidden;
 
     h1.lg-heading {
       font-size: 3rem;
@@ -55,6 +54,16 @@
       width: 100px;
       height: 100px;
     }
+  }
+
+  .about-info {
+    grid-template-areas:
+      "bio-image"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
+    grid-template-columns: 1fr;
   }
 }
 

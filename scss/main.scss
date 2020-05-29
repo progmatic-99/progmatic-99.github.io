@@ -1,6 +1,5 @@
 @import "config";
 @import "menu";
-@import "mobile";
 
 * {
   box-sizing: border-box;
@@ -53,7 +52,10 @@ header {
 
 main {
   padding: 3rem;
-  height: 100%;
+  // height: 100%;
+  // (Viewport height - footer height)
+  // To make footer sticky
+  min-height: calc(100vh - 50px);
 
   .icons {
     margin-top: 1rem;
@@ -125,3 +127,5 @@ main {
   color: set-text-color($primary-color);
   height: 50px;
 }
+
+@import "mobile";
