@@ -179,8 +179,32 @@ main {
 
 .projects {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 0.8rem;
   grid-template-columns: repeat(2, 1fr); }
+  .projects img {
+    width: 100%;
+    border: 3px #34dfc8 solid; }
+    .projects img:hover {
+      opacity: 0.3;
+      border-color: #a2e464;
+      transition: all 1s ease-out; }
+
+.btn, .btn-dark, .btn-light {
+  display: block;
+  padding: 0.5rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
+    background-color: #a2e464;
+    color: #000000; }
+
+.btn-dark {
+  background: black;
+  color: #fff; }
+
+.btn-light {
+  background: #c4c4c4;
+  color: #333; }
 
 #main-footer {
   text-align: center;
