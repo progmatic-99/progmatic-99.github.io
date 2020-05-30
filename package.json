@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/progmatic-99/shubham-upreti.github.io/issues"
   },
-  "homepage": "https://progmatic-99.github.io/progmatic-99.github.io",
+  "homepage": "https://progmatic-99.github.io",
   "dependencies": {
     "gh-pages": "^1.2.0",
     "node-sass": "^4.9.2"
