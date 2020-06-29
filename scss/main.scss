@@ -83,18 +83,18 @@ main {
   display: grid;
   grid-gap: 20px;
   grid-template-areas:
-    "bio-image bio bio"
+    "bio bio bio"
     "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr);
 
-  .bio-image {
-    grid-area: bio-image;
-    margin: auto;
-    border-radius: 50%;
-    border: $secondary-color 3px solid;
-    width: 150px;
-    height: 150px;
-  }
+  // .bio-image {
+  //   grid-area: bio-image;
+  //   margin: auto;
+  //   border-radius: 50%;
+  //   border: $secondary-color 3px solid;
+  //   width: 150px;
+  //   height: 150px;
+  // }
 
   .bio {
     grid-area: bio;

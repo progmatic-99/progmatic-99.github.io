@@ -154,15 +154,8 @@ main {
 .about-info {
   display: grid;
   grid-gap: 20px;
-  grid-template-areas: "bio-image bio bio" "job1 job2 job3";
+  grid-template-areas: "bio bio bio" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
-  .about-info .bio-image {
-    grid-area: bio-image;
-    margin: auto;
-    border-radius: 50%;
-    border: #a2e464 3px solid;
-    width: 150px;
-    height: 150px; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
