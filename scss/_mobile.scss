@@ -64,12 +64,32 @@
 
   .about-info {
     grid-template-areas:
-      "bio-image"
       "bio"
-      "job1"
-      "job2"
-      "job3";
+      "text";
     grid-template-columns: 1fr;
+
+    .bio-text {
+      p {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  .skills {
+    grid-template-areas:
+      "head head"
+      "job1 job2"
+      "job3 job4"
+      "job5 job6"
+      "job7 job8";
+    grid-template-columns: repeat(2, 1fr);
+
+    .job {
+      img {
+        height: 30vh;
+        width: 30vh;
+      }
+    }
   }
 
   .projects {

@@ -51,6 +51,7 @@ $menu-opacity: 0.9;
 @mixin mediaMd {
   // width cannot be more than 768px
   @media screen and (max-width: 768px) {
+    // @import "menu";
     @content;
   }
 }

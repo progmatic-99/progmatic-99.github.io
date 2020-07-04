@@ -154,27 +154,50 @@ main {
 .about-info {
   display: grid;
   grid-gap: 20px;
-  grid-template-areas: "bio bio bio" "job1 job2 job3";
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-areas: "bio text text text";
+  grid-template-columns: repeat(4, 1fr); }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
-  .about-info .job-1 {
+  .about-info .bio-text {
+    grid-area: text; }
+    .about-info .bio-text p {
+      font-size: 1.5rem; }
+
+.skills {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: "head head head head" "job1 job2 job3 job4" "job5 job6 job7 job8";
+  grid-template-columns: repeat(4, 1fr); }
+  .skills .head {
+    font-size: 1.5rem;
+    grid-area: head; }
+  .skills .job-1 {
     grid-area: job1; }
-  .about-info .job-2 {
+  .skills .job-2 {
     grid-area: job2; }
-  .about-info .job-3 {
+  .skills .job-3 {
     grid-area: job3; }
-  .about-info .job {
-    background: #515151;
-    padding: 0.5rem;
-    border-bottom: #a2e464 5px solid; }
+  .skills .job-4 {
+    grid-area: job4; }
+  .skills .job-5 {
+    grid-area: job5; }
+  .skills .job-6 {
+    grid-area: job6; }
+  .skills .job-7 {
+    grid-area: job7; }
+  .skills .job-8 {
+    grid-area: job8; }
+  .skills .job img {
+    width: 40vh;
+    height: 40vh; }
 
 .projects {
   display: grid;
   grid-gap: 0.8rem;
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
+    height: 40vh;
     width: 100%;
     border: 3px #34dfc8 solid; }
     .projects img:hover {
@@ -263,8 +286,16 @@ main {
       width: 100px;
       height: 100px; }
   .about-info {
-    grid-template-areas: "bio-image" "bio" "job1" "job2" "job3";
+    grid-template-areas: "bio" "text";
     grid-template-columns: 1fr; }
+    .about-info .bio-text p {
+      font-size: 1.3rem; }
+  .skills {
+    grid-template-areas: "head head" "job1 job2" "job3 job4" "job5 job6" "job7 job8";
+    grid-template-columns: repeat(2, 1fr); }
+    .skills .job img {
+      height: 30vh;
+      width: 30vh; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
