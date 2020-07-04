@@ -290,9 +290,12 @@ main {
     grid-template-columns: 1fr; }
     .about-info .bio-text p {
       font-size: 1.3rem; }
-  .skills .job img {
-    height: 15vh;
-    width: 15vh; }
+  .skills {
+    grid-template-areas: "head head" "job1 job2" "job3 job4" "job5 job6" "job7 job8";
+    grid-template-columns: repeat(2, 1fr); }
+    .skills .job img {
+      height: 16vh;
+      width: 16vh; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
