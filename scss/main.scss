@@ -82,23 +82,44 @@ main {
 .about-info {
   display: grid;
   grid-gap: 20px;
-  grid-template-areas:
-    "bio-image bio bio"
-    "job1 job2 job3";
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "bio text text text";
+  grid-template-columns: repeat(4, 1fr);
 
-  .bio-image {
-    grid-area: bio-image;
-    margin: auto;
-    border-radius: 50%;
-    border: $secondary-color 3px solid;
-    width: 150px;
-    height: 150px;
-  }
+  // .bio-image {
+  //   grid-area: bio-image;
+  //   margin: auto;
+  //   border-radius: 50%;
+  //   border: $secondary-color 3px solid;
+  //   width: 150px;
+  //   height: 150px;
+  // }
 
   .bio {
     grid-area: bio;
     font-size: 1.5rem;
+  }
+
+  .bio-text {
+    grid-area: text;
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+// Skills
+.skills {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    "head head head head"
+    "job1 job2 job3 job4"
+    "job5 job6 job7 job8";
+  grid-template-columns: repeat(4, 1fr);
+
+  .head {
+    font-size: 1.5rem;
+    grid-area: head;
   }
 
   .job-1 {
@@ -113,10 +134,34 @@ main {
     grid-area: job3;
   }
 
+  .job-4 {
+    grid-area: job4;
+  }
+
+  .job-5 {
+    grid-area: job5;
+  }
+
+  .job-6 {
+    grid-area: job6;
+  }
+
+  .job-7 {
+    grid-area: job7;
+  }
+
+  .job-8 {
+    grid-area: job8;
+  }
+
   .job {
-    background: lighten($color: $primary-color, $amount: 5);
-    padding: 0.5rem;
-    border-bottom: $secondary-color 5px solid;
+    //   background: lighten($color: $primary-color, $amount: 5);
+    //   padding: 0.5rem;
+    //   border-bottom: $secondary-color 5px solid;
+    img {
+      width: 40vh;
+      height: 40vh;
+    }
   }
 }
 
@@ -127,6 +172,7 @@ main {
   grid-template-columns: repeat(3, 1fr);
 
   img {
+    height: 40vh;
     width: 100%;
     border: 3px rgb(52, 223, 200) solid;
 
