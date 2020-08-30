@@ -89,7 +89,7 @@
     .portrait {
       width: 200px;
       height: 200px;
-      background: url("/dist/assets/img/ld.jpeg");
+      background: url('dist/assets/img/ld.jpeg');
       background-size: cover;
       border-radius: 50%;
       border: solid 3px $secondary-color;
