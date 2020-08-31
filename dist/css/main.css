@@ -67,7 +67,7 @@
 .menu-branding .portrait {
   width: 200px;
   height: 200px;
-  background: url(https://progmatic-99.github.io/dist/assets/img/ld.jpeg);
+  background: url("./ld.jpeg");
   background-size: cover;
   border-radius: 50%;
   border: solid 3px #a2e464;
@@ -87,7 +87,7 @@
   position: relative;
   font-size: 30px;
   text-transform: uppercase;
-  padding: 1rem 0;
+  padding: 0.9rem 0;
   font-weight: 400;
   color: #ffffff;
   text-decoration: none;
@@ -114,7 +114,7 @@
 }
 
 body {
-  background: set-image-url("/dist/assets/img/kate-hazen-fractal-mountains.png");
+  background: url("./bg.png");
   background-attachment: fixed;
   background-size: cover;
   background-color: #444;

@@ -4,7 +4,7 @@
 $primary-color: #444;
 $secondary-color: #a2e464;
 $show-home-image: true;
-$home-image: set-image-url("/dist/assets/img/kate-hazen-fractal-mountains.png");
+$home-image: url("./bg.png");
 $background-opacity: 0.2;
 $menu-opacity: 0.9;
 
@@ -41,9 +41,9 @@ $menu-opacity: 0.9;
 }
 
 // For the image url
-@function set-image-url($name) {
-  @return string.unquote("url(https://progmatic-99.github.io" + $name + ")");
-}
+// @function set-image-url($name) {
+//   @return string.unquote("url(https://progmatic-99.github.io" + $name + ")");
+// }
 
 // Media Query mixins
 
