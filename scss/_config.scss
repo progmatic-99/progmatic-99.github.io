@@ -1,4 +1,5 @@
 // Partial config file
+@use "sass:string";
 
 $primary-color: #444;
 $secondary-color: #a2e464;
@@ -41,7 +42,7 @@ $menu-opacity: 0.9;
 
 // For the image url
 @function set-image-url($name) {
-  @return unquote("url(https://progmatic-99.github.io" + url($name) + ")");
+  @return string.unquote("url(https://progmatic-99.github.io" + $name + ")");
 }
 
 // Media Query mixins
