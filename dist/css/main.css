@@ -67,7 +67,7 @@
 .menu-branding .portrait {
   width: 200px;
   height: 200px;
-  background: url("./ld.jpeg");
+  background: url("logo.svg");
   background-size: cover;
   border-radius: 50%;
   border: solid 3px #a2e464;
@@ -114,7 +114,7 @@
 }
 
 body {
-  background: url("./bg.png");
+  background: url("bg.png");
   background-attachment: fixed;
   background-size: cover;
   background-color: #444;
